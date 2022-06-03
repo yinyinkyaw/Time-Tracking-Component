@@ -1,7 +1,7 @@
 [
   {
     "title": "Work",
-    "timeframes": {
+    "timeframes":{
       "daily": {
         "current": 5,
         "previous": 7

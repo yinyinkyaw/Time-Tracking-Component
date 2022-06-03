@@ -1,0 +1,157 @@
+.time-track-card-container{
+    display: flex;
+    border-radius: 15px;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.time-track-card-icon{
+    position: absolute;
+    top: -3px;
+    right: 15px;
+}
+
+.time-track-card-second-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1d204b;
+    z-index: 1;
+    height: calc(100% - 35px);
+    margin-top: 35px;
+    width: 100%;
+}
+
+.time-track-card-header{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: flex-start;
+}
+
+.time-track-card-title{
+    color: white;
+}
+
+.time-track-card-header > button{
+    width: 24px;
+    height: 24px;
+    border:none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor:pointer;
+}
+.time-track-card-body{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    flex-wrap: wrap;
+
+}
+.time-track-card-body > label{
+    font: 500 35px "DM Sans";
+    color: white;
+}
+
+.time-track-card-body-sub-info{
+    display: flex;
+    flex: 1 1 150px;
+}
+
+.time-track-card-body-sub-info > span{
+    color: #b6b9ee;
+    font-size: 12px;
+}
+
+/*------------------ time track main component ------------------*/
+
+.time-track-component-main-container{
+    display: grid;
+    grid-template-columns: 250px calc(100% - 270px);
+    gap: 20px;
+    width:70%;
+}
+
+.time-track-component--profile-card{
+    background-color: #1d204b;
+    border-radius: 10px;
+}
+
+.time-track-component--profile-user-info{
+    background-color: #5746ea;
+    border-radius: 10px;
+    z-index: 1;
+    height: calc(100% - 180px);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.time-track-component--profile-user-img{
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.time-track-component--profile-user-img > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.time-track-component--profile-user-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.time-track-component--profile-user-name > span{
+    color: #b6aeff;
+    font-size: 14px;
+}
+
+.time-track-component--profile-user-name > label{
+    font-size: 50px;
+    color: white;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.time-track-component--profile-data-type-list{
+    padding: 15px 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    border:none;
+    background-color: transparent;
+    color: #7c7fc6;
+    height: 33px;
+    width: 100%;
+    outline:none;
+    cursor:pointer;
+    text-align: left;
+}
+
+.button.active{
+    color: white;
+}
+
+.time-track-component--profile-data-type-list > button:hover{
+    background-color: #34397b;
+    color: white;
+}
+
+.time-track-component--activity-card-list{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 20px;
+}
